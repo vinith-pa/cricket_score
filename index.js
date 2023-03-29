@@ -23,7 +23,7 @@ const updateBalls = () => {
 };
 
 const updateRecent = (run) => {
-  let seperator = isNaN(run) || balls % 6 != 0 ? "." : "|";
+  let seperator = (isNaN(run) && !"W") || balls % 6 != 0 ? "." : "|";
   recent.append(`${run}${seperator}`);
 };
 
