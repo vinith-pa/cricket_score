@@ -1,0 +1,8 @@
+button {
+  height: 3rem;
+  width: 3rem;
+}
+
+#recent {
+  overflow-y: auto;
+}

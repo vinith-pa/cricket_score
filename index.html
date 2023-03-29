@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Run Meter</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Cricket Run Meter</h1>
+    <div class="scorecontainer">
+      <div class="teamScoreContainer">
+        <h2>Team A</h2>
+        <div id="teamAScore">
+          <span id="teamARuns">-</span>/<span id="teamAWickets">-</span>
+        </div>
+        <div id="teamAOvers"><span>0</span>.<span>0</span></div>
+      </div>
+      <div class="teamScoreContainer">
+        <h2>Team B</h2>
+        <div id="teamBScore">
+          <span id="teamBRuns">-</span>/<span id="teamBWickets">-</span>
+          <div id="teamAOvers">0.0</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="recent">Recent: <span></span></div>
+    <hr />
+    <div id="runsInputConatiner">
+      <button data-runs>0</button>
+      <button data-runs>1</button>
+      <button data-runs>2</button>
+      <button data-runs>3</button>
+      <button data-runs>4</button>
+      <button data-runs>6</button>
+      <button data-extras>Wd</button>
+      <button data-extras>Nb</button>
+      <button data-wicket>W</button>
+    </div>
+  </body>
+</html>
