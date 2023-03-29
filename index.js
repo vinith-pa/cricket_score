@@ -2,10 +2,8 @@ const teamARuns = document.getElementById("teamARuns");
 const teamAWickets = document.getElementById("teamAWickets");
 const teamAOvers = document.getElementById("teamAOvers");
 const recent = document.getElementById("recent");
+const teamChange = document.getElementById("teamChange");
 
-let runs = 0;
-let wickets = 0;
-let balls = 0;
 const updateRuns = (run) => {
   runs = runs + run;
   console.log(runs);
@@ -53,6 +51,14 @@ wicketButton.addEventListener("click", () => {
   updateBalls();
   updateRecent("W");
 });
+
+teamChange.addEventListener("click", () => {
+  console.log(`team change`);
+});
+
+let runs = 0;
+let wickets = 0;
+let balls = 0;
 
 // window.onbeforeunload = function (e) {
 //   var e = e || window.event;

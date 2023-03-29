@@ -6,3 +6,13 @@ button {
 #recent {
   overflow-y: auto;
 }
+
+.score {
+  font-size: 1.5rem;
+}
+
+#teamChange {
+  width: auto;
+  font-size: 2rem;
+  font-weight: bolder;
+}
