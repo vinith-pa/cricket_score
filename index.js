@@ -1,8 +1,15 @@
 const teamARuns = document.getElementById("teamARuns");
 const teamAWickets = document.getElementById("teamAWickets");
 const teamAOvers = document.getElementById("teamAOvers");
+const teamBRuns = document.getElementById("teamBRuns");
+const teamBWickets = document.getElementById("teamBWickets");
+const teamBOvers = document.getElementById("teamBOvers");
 const recent = document.getElementById("recent");
 const teamChange = document.getElementById("teamChange");
+
+let runs = 0;
+let wickets = 0;
+let balls = 0;
 
 const updateRuns = (run) => {
   runs = runs + run;
@@ -25,9 +32,15 @@ const updateRecent = (run) => {
   recent.append(`${run}${seperator}`);
 };
 
+const undo = () => {
+  balls -= 1;
+  updateBalls();
+};
+
 const runsButton = document.querySelectorAll("[data-runs]");
 const extrasButton = document.querySelectorAll("[data-extras]");
 const wicketButton = document.querySelector("[data-wicket]");
+const undoButton = document.getElementById("undo");
 
 runsButton.forEach((button) => {
   button.addEventListener("click", () => {
@@ -56,9 +69,10 @@ teamChange.addEventListener("click", () => {
   console.log(`team change`);
 });
 
-let runs = 0;
-let wickets = 0;
-let balls = 0;
+undoButton.addEventListener("click", () => {
+  console.log("delete");
+  undo();
+});
 
 // window.onbeforeunload = function (e) {
 //   var e = e || window.event;

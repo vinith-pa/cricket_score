@@ -11,8 +11,10 @@ h1 {
 button {
   height: 100px;
   width: 100px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bolder;
+  background: #0000005e;
+  border-radius: 1.5rem;
 }
 
 #recent {
