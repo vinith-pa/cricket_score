@@ -5,6 +5,9 @@
 body {
   background: linear-gradient(to right, #00aaff, #00ff6c);
 }
+h1 {
+  text-align: center;
+}
 button {
   height: 100px;
   width: 100px;
@@ -20,10 +23,14 @@ button {
   font-size: 1.5rem;
 }
 
-#teamChange {
-  width: auto;
-  font-size: 2rem;
-  font-weight: bolder;
+#others {
+  display: flex;
+  justify-content: space-around;
+}
+
+#scoreContainer {
+  display: flex;
+  text-align: center;
 }
 
 #runsInputConatiner {
@@ -32,4 +39,8 @@ button {
   align-items: center;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
+}
+
+#teamChange {
+  width: auto;
 }
