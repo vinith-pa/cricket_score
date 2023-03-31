@@ -1,6 +1,15 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
 button {
-  height: 3rem;
-  width: 3rem;
+  height: 100px;
+  width: 100px;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 #recent {
@@ -15,4 +24,12 @@ button {
   width: auto;
   font-size: 2rem;
   font-weight: bolder;
+}
+
+#runsInputConatiner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
 }
