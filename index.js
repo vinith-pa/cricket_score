@@ -74,10 +74,10 @@ undoButton.addEventListener("click", () => {
   undo();
 });
 
-// window.onbeforeunload = function (e) {
-//   var e = e || window.event;
-//   if (e) {
-//     e.returnValue = `Leaving the page`;
-//   }
-//   return `Leaving the page`;
-// };
+window.onbeforeunload = function (e) {
+var e = e || window.event;
+if (e) {
+e.returnValue = `Leaving the page`;
+}
+return `Leaving the page`;
+};
